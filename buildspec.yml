@@ -6,6 +6,7 @@ phases:
       - apt-get update -y
   build:
     commands:
+      - printenv
       - dotnet restore
       - dotnet build
       - cd CiTest
